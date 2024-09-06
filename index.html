@@ -43,6 +43,18 @@
             flex-direction: column;
             justify-content: flex-end;
         }
+        @media (max-width: 575.98px) {
+            .navbar-brand {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                line-height: 1.2;
+            }
+            .navbar-brand .projects-text {
+                font-size: 0.8em;
+                opacity: 0.8;
+            }
+        }
 
         .company-tags-container {
             margin-top: auto;
@@ -52,7 +64,11 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">Ivan Khomichkov Projects</a>
+        <a class="navbar-brand" href="#">
+            Ivan Khomichkov
+            <span class="projects-text d-none d-sm-inline">Projects</span>
+            <span class="projects-text d-inline d-sm-none">Projects</span>
+        </a>
         <div class="ms-auto">
             <a href="Ivan_Khomichkov_Unity_Developer_CV.pdf" class="btn btn-outline-light" download>Download CV</a>
         </div>
